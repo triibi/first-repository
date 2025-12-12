@@ -1,0 +1,31 @@
+#header{
+    width: 1560px;
+    height: 553px;
+    background-color: #3CB2E8;
+    margin-bottom: 527px;
+}
+h1{
+    color: white;
+    font-size: 32px;
+}
+p{
+    color: white;
+    font-size: 16px;
+}
+p1{
+    color: white;
+    font-size: 20px;
+}
+p2{
+    color: white;
+    font-size: 20px;
+}
+main{
+    font-family: "Montserrat", sans-serif;
+}
+img{
+    position: relative;
+    bottom: 900px;
+    left: 100px;
+    
+}
