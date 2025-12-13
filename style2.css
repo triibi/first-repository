@@ -93,7 +93,6 @@ main{
     position: relative;
     bottom: 1230px;
     left: 100px; 
-    border-radius: 20px;
     z-index: 3;
 }
 .button{
@@ -154,4 +153,10 @@ button2{
 }
 img{
     border-radius: 20px;
+}
+#header{
+    width: 1560px;
+    height: 553px;
+    background-color: #3CB2E8;
+    margin-bottom: 527px;
 }
