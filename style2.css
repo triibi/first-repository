@@ -14,6 +14,7 @@ h1{
     left: 620px;
     right: 77px;
     top: 120px;
+    overflow: auto;
 }
 p{
     color: white;
@@ -24,6 +25,7 @@ p{
     left: 679px;
     right: 77px;
     top: 110px;
+    overflow: auto;
 }
 p1{
     color: white;
@@ -34,6 +36,7 @@ p1{
     left: 679px;
     right: 77px;
     top: 100px;
+    overflow: auto;
 }
 p2{
     color: white;
@@ -44,6 +47,7 @@ p2{
     left: 679px;
     right: 77px;
     top: 100px;
+    overflow: auto;
 }
 h2{
     color: #323B;
@@ -52,6 +56,7 @@ h2{
     left: 88px;
     right: 77px;
     bottom: 500px;
+    overflow: auto;
 }
 p3{
     color: #323B;
@@ -61,7 +66,7 @@ p3{
     right: 77px;
     bottom: 500px;
     font-weight: bold;
-
+    overflow: auto;
 }
 p4{
     color: #323B;
@@ -71,7 +76,7 @@ p4{
     right: 77px;
     bottom: 500px;
     font-weight: bold;
-
+    grid: minmax(30px);
 }
 p5{
     color: #323B;
@@ -81,19 +86,20 @@ p5{
     right: 77px;
     bottom: 500px;
     font-weight: bold;
-
+    overflow: auto;
+}
+p6{
+    color: #323B;
+    font-size: 24px;
+    position: relative;
+    left: 200px;
+    right: 77px;
+    bottom: 100px;
+    top: -200px;
+    font-weight: bold;
 }
 main{
     font-family: "Montserrat", sans-serif;
-}
-.pic1{
-     width: 479px;
-    height: 320px;
-
-    position: relative;
-    bottom: 1230px;
-    left: 100px; 
-    z-index: 3;
 }
 .button{
     width: 369px;
@@ -111,6 +117,7 @@ main{
     z-index: 3;
     cursor: pointer;
     transition:  background-color 0.3s, box-shadow 0.2s 0.3s;
+    overflow: auto;
 }
 .button:hover{
     background-color: white;
@@ -131,6 +138,7 @@ button1{
     z-index: 3;
     transition:  background-color 0.3s, box-shadow 0.2s 0.3s;
     cursor: pointer;
+    overflow: auto;
 }
 button1:hover{
     background-color: white;
@@ -151,18 +159,56 @@ button2{
     z-index: 3;
     transition:  background-color 0.3s, box-shadow 0.2s 0.3s;
     cursor: pointer;
+    overflow: auto;
 }
 button2:hover{
     background-color: white;
 }
+button3{
+    width: 369px;
+    height: 600px;
+    padding: 1.3em 1.5em;
+    position: relative;
+    left: -100px;
+    top: 1800px;
+    border-radius: 13px;
+    color: white;
+    background-color: #3CB2E8;
+    border-style: none;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    z-index: 3;
+    transition:  background-color 0.3s, box-shadow 0.2s 0.3s;
+    cursor: pointer;
+    overflow: auto;
+}
+button3:hover{
+    background-color: #21a8e6;
+}
+.pic1{
+     width: 479px;
+    height: 320px;
+    position: relative;
+    bottom: 1265px;
+    left: 100px; 
+    z-index: 3;
+}
 .pic2{
+    width: 480px;
+    height: 320px;
+    z-index: 3;
+    position: relative;
+    top: -1087px;
+    left: 770px;
+    border-radius: 20px;
+}
+.pic3{
      width: 480px;
     height: 320px;
     z-index: 3;
     position: relative;
-    top: -1015px;
-    left: 770px;
-    border-radius: 20px;
+    bottom: 680px;
+    left: 20px;
 }
 img{
     border-radius: 20px;
@@ -173,4 +219,9 @@ img{
     background-color: #3CB2E8;
     margin-bottom: 527px;
 }
-
+.size{
+    width: 1280px;
+    border: 2px;
+    z-index: 3;
+    color: black;
+}
