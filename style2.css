@@ -22,7 +22,7 @@ height: 500px;
     object-fit: cover;
     border-radius: 10px;
 }
-button1{
+.button1{
     width: 244px;
     height: 55px;
     padding: 0.5em 1.5em;
@@ -39,10 +39,10 @@ button1{
     cursor: pointer;
     overflow: auto;
 }
-button1:hover{
+.button1:hover{
     background-color: white;
 }
-button2{
+.button2{
     width: 244px;
     height: 55px;
     padding: 0.5em 1.5em;
@@ -59,7 +59,7 @@ button2{
     cursor: pointer;
     overflow: auto;
 }
-button2:hover{
+.button2:hover{
     background-color: white;
 }
 .line{

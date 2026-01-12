@@ -1,5 +1,4 @@
-
-    const sliderTrack = document.querySelector(".slider-track");
+const sliderTrack = document.querySelector(".slider-track");
     const slides = document.querySelectorAll(".slide");
     const halfLength = Math.floor(slides.length / 2); 
     const changeButton = document.getElementById("changeButton");
