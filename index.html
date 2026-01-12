@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Создать открытку</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Шапка с кнопками в правом углу -->
+    <header class="main-header">
+        <div class="header-content">
+            <div class="header-buttons">
+                <button class="oval-button" id="selectImageBtn">
+                    Выбрать изображение
+                </button>
+                <button  id="createCardBtn">
+                    Создать открытку
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Заголовок -->
+        <h1>создать открытку с подписью</h1>
+        
+        <!-- Поля ввода -->
+        <div class="inputs">
+            <div class="input-group">
+                <label for="fromInput">от кого</label>
+                <input type="text" id="fromInput" placeholder="Введите имя отправителя">
+            </div>
+            
+            <div class="input-group">
+                <label for="toInput">кому</label>
+                <textarea id="toInput" placeholder="Введите имя получателя"></textarea>
+            </div>
+            
+            <div class="input-group">
+                <label for="wishInput">пожелания</label>
+                <textarea id="wishInput" placeholder="Введите текст пожелания"></textarea>
+            </div>
+        </div>
+        
+        <!-- Кнопка сброса -->
+        <div class="reset-section">
+            <button id="resetBtn" class="reset-btn">сбросить</button>
+        </div>
+        
+        <!-- Предпросмотр открытки -->
+        <div class="card-section">
+            <h2>Предпросмотр:</h2>
+            <div class="card-container">
+                <div class="card" id="card">
+                    <div class="card-content">
+                        <div class="text-overlay" id="textTop"></div>
+                        <div class="text-overlay" id="textCenter"></div>
+                        <div class="text-overlay" id="textBottom"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Скрытый input для выбора изображения -->
+    <input type="file" id="imageUpload" accept="image/*" style="display: none;">
+
+    <!-- Скрипты -->
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
