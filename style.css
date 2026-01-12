@@ -33,11 +33,12 @@ body {
 
 /* Кнопки в шапке - прямоугольные с закругленными углами */
 .header-btn {
-    padding: 10px 20px;
+    
+    padding: 12px 20px;
     border: none;
-    border-radius: 6px;
+    border-radius: 20px;
     background: white;
-    color: #0066cc;
+    color: #000000;
     font-size: 14px;
     font-weight: 600;
     cursor: pointer;
@@ -57,12 +58,12 @@ body {
 }
 
 .create-btn {
-    background: #28a745;
-    color: white;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
 }
 
 .create-btn:hover {
-    background: #218838;
+    background: #ffffff;
 }
 
 /* Основной контейнер */
@@ -81,14 +82,9 @@ h1 {
     text-align: center;
     color: #000000;
     margin-bottom: 30px;
-    font-size: 28px;
+    font-size: 20px;
 }
 
-h2 {
-    color: #0066cc;
-    margin-bottom: 20px;
-    font-size: 22px;
-}
 
 /* Поля ввода */
 .inputs {
@@ -106,7 +102,7 @@ h2 {
 
 .input-group label {
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 3  00;
     color: #000000;
 }
 
@@ -132,28 +128,6 @@ textarea {
     line-height: 1.5;
 }
 
-/* Кнопка сброса */
-.reset-section {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.reset-btn {
-    padding: 12px 25px;
-    border: 1px solid #ff6b6b;
-    background: white;
-    color: #ff6b6b;
-    border-radius: 6px;
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s;
-}
-
-.reset-btn:hover {
-    background: #ff6b6b;
-    color: white;
-}
 
 /* Карточка */
 .card-section {

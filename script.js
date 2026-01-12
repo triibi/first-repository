@@ -29,16 +29,6 @@ document.addEventListener('DOMContentLoaded', function() {
     toInput.addEventListener('input', updateText);
     wishInput.addEventListener('input', updateText);
 
-    // Сброс всех полей
-    resetBtn.addEventListener('click', function() {
-        if (confirm('Очистить все поля?')) {
-            fromInput.value = '';
-            toInput.value = '';
-            wishInput.value = '';
-            card.style.background = currentBackground = 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)';
-            updateText();
-        }
-    });
 
     // Выбор изображения
     selectImageBtn.addEventListener('click', function() {
@@ -132,15 +122,6 @@ document.addEventListener('DOMContentLoaded', function() {
             createCardBtn.textContent = originalText;
         });
     });
-
-    // Пример текста при загрузке
-    setTimeout(() => {
-        fromInput.value = "От всего коллектива";
-        toInput.value = "Дорогому другу";
-        wishInput.value = "С наилучшими пожеланиями!";
-        updateText();
-    }, 500);
-
     // Инициализация
     updateText();
 });
