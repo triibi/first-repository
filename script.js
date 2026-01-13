@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Элементы
+
     const fromInput = document.getElementById('fromInput');
     const toInput = document.getElementById('toInput');
     const wishInput = document.getElementById('wishInput');
