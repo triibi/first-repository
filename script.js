@@ -14,39 +14,39 @@ document.addEventListener('DOMContentLoaded', function() {
     const imageUpload = document.getElementById('imageUpload');
     const card = document.getElementById('card');
 
-    // Текущий фон карточки
+
     let currentBackground = 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)';
 
-    // Обновление текста на открытке
+
     function updateText() {
         textTop.textContent = fromInput.value || 'От кого';
         textCenter.textContent = toInput.value || 'Кому';
         textBottom.textContent = wishInput.value || 'Пожелание';
     }
 
-    // Слушаем ввод в полях
+
     fromInput.addEventListener('input', updateText);
     toInput.addEventListener('input', updateText);
     wishInput.addEventListener('input', updateText);
 
 
-    // Выбор изображения
+
     selectImageBtn.addEventListener('click', function() {
         imageUpload.click();
     });
 
-    // Обработка выбора изображения
+
     imageUpload.addEventListener('change', function(e) {
         const file = e.target.files[0];
         if (!file) return;
 
-        // Проверяем тип файла
+
         if (!file.type.match('image.*')) {
             alert('Пожалуйста, выберите файл изображения (JPG, PNG, GIF)');
             return;
         }
 
-        // Проверяем размер файла (максимум 5MB)
+
         if (file.size > 5 * 1024 * 1024) {
             alert('Файл слишком большой. Максимальный размер: 5MB');
             return;
@@ -55,11 +55,11 @@ document.addEventListener('DOMContentLoaded', function() {
         const reader = new FileReader();
         
         reader.onload = function(e) {
-            // Устанавливаем выбранное изображение как фон
+
             card.style.background = `url('${e.target.result}') center/cover no-repeat`;
             currentBackground = `url('${e.target.result}') center/cover no-repeat`;
             
-            // Показываем уведомление
+
             alert('Изображение успешно загружено!');
         };
         
@@ -70,14 +70,14 @@ document.addEventListener('DOMContentLoaded', function() {
         reader.readAsDataURL(file);
     });
 
-    // Создание и сохранение открытки
+
     createCardBtn.addEventListener('click', function() {
         if (typeof html2canvas === 'undefined') {
             alert('Пожалуйста, подождите загрузки библиотеки и попробуйте снова');
             return;
         }
         
-        // Проверяем, заполнены ли поля
+
         if (!fromInput.value.trim() || !toInput.value.trim() || !wishInput.value.trim()) {
             alert('Пожалуйста, заполните все поля перед созданием открытки');
             return;
@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', function() {
             allowTaint: true,
             logging: false
         }).then(canvas => {
-            // Создаем ссылку для скачивания
+
             const link = document.createElement('a');
             const date = new Date();
             const fileName = `открытка-${date.getTime()}.png`;
@@ -105,8 +105,7 @@ document.addEventListener('DOMContentLoaded', function() {
             document.body.appendChild(link);
             link.click();
             document.body.removeChild(link);
-            
-            // Показываем успешное сообщение
+
             createCardBtn.disabled = false;
             createCardBtn.textContent = 'Создано!';
             
@@ -122,6 +121,5 @@ document.addEventListener('DOMContentLoaded', function() {
             createCardBtn.textContent = originalText;
         });
     });
-    // Инициализация
     updateText();
 });

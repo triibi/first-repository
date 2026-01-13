@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Создать открытку</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Шапка с кнопками в правом углу -->
+    
     <header class="main-header">
         <div class="header-content">
             <div class="header-buttons">
@@ -22,27 +25,21 @@
     </header>
 
     <div class="container">
-        <!-- Заголовок -->
         <h1>создать открытку с подписью</h1>
-        
-        <!-- Поля ввода -->
         <div class="inputs">
             <div class="input-group">
-                <label for="fromInput">от кого</label>
+                <label for="fromInput"><strong>от кого</strong></label>
                 <input type="text" id="fromInput" placeholder="Введите имя отправителя">
             </div>
-            
             <div class="input-group">
-                <label for="toInput">кому</label>
+                <label for="toInput"><strong>кому</strong></label>
                 <textarea id="toInput" placeholder="Введите имя получателя"></textarea>
             </div>
-            
             <div class="input-group">
-                <label for="wishInput">пожелания</label>
+                <label for="wishInput"><strong>пожелания</strong></label>
                 <textarea id="wishInput" placeholder="Введите текст пожелания"></textarea>
             </div>
         </div>
-        <!-- Предпросмотр открытки -->
         <div class="card-section">  
             <div class="card-container">
                 <div class="card" id="card">
@@ -55,11 +52,7 @@
             </div>
         </div>
     </div>
-
-    <!-- Скрытый input для выбора изображения -->
     <input type="file" id="imageUpload" accept="image/*" style="display: none;">
-
-    <!-- Скрипты -->
     <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
     <script src="script.js"></script>
 </body>
